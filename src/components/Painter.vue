@@ -103,6 +103,8 @@ export default {
   mounted() {
     var c = document.getElementById("drawCanvas");
     this.canvas = c.getContext('2d');
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
     this.canvas.lineCap = 'round';
     this.canvas.lineJoin= "round";
   },
