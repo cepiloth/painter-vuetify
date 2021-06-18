@@ -2,6 +2,9 @@
 
 > A Vue.js project
 
+## Preview
+<img src="https://github.com/cepiloth/painter-vuetify/blob/main/example/sample.png">
+
 ## Build Setup
 
 ``` bash
