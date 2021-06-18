@@ -1,18 +1,39 @@
 <template>
-  <v-container>
-      <v-layout row wrap align-center>
+  <v-container >
+    <v-layout
+      align-center
+      column
+      justify-center>
       <h1>Drawing with mousemove event</h1>
-      <h1>{{x}} , {{y}}</h1>
-      <canvas id="drawCanvas" width="500" height="500" @mousedown="beginDrawing" @mouseup="stopDrawing" @mousemove="draw">
-      						Canvas not supported
-      </canvas>
-
-
     </v-layout>
+
+    <v-layout
+      align-center
+      column
+      justify-center>
+      <h2>{{x}} , {{y}}</h2>
+    </v-layout>
+
     <br>
-    <button id="btnPrev" class="button" @click="prev">Undo</button>
-    <button id="btnClea" class="button" @click="clear">Clear</button>
-    <button id="btnSave" class="button" @click="upload">Save</button>
+
+    <v-layout
+      align-center
+      column
+      justify-center>
+      <canvas id="drawCanvas" width="500" height="500" @mousedown="beginDrawing" @mouseup="stopDrawing" @mousemove="draw">
+      Canvas not supported
+      </canvas>
+    </v-layout>
+
+    <br>
+
+    <v-layout
+      align-center
+      justify-center>
+      <v-btn color="info" id="btnPrev" class="button" @click="prev">Undo</v-btn>
+      <v-btn color="error" id="btnClea" class="button" @click="clear">Clear</v-btn>
+      <v-btn color="success" id="btnSave" class="button" @click="upload">Save</v-btn>
+    </v-layout>
   </v-container>
 </template>
 

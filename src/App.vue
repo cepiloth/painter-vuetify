@@ -37,10 +37,10 @@
       </v-btn>
     </v-app-bar>
 
-    <v-main >
-      <v-flex justify-center>
+    <v-main>
+      <div class="mx-auto">
         <Painter/>
-      </v-flex>
+      </div>
     </v-main>
   </v-app>
 </template>
