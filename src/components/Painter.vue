@@ -29,7 +29,8 @@
 
     <v-layout
       align-center
-      justify-center>
+      justify-center
+    >
       <v-btn color="info" id="btnPrev" class="button" @click="prev">Undo</v-btn>
       <v-btn color="error" id="btnClea" class="button" @click="clear">Clear</v-btn>
       <v-btn color="success" id="btnSave" class="button" @click="upload">Save</v-btn>
